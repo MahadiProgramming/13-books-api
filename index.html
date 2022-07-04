@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-secondary ">
+    <div class="container bg-warning">
+      <h2 class="text-center text-muted mt-5 pt-5 fs-1 text">search your Books !!!</h2>
+      <!-- Book search -->
+      <div class="input-group mb-3 w-50 mx-auto mt-5">
+          <input id="search_input" type="text" class="form-control shadow-lg p-3 mb-5 " placeholder="type Book name..." aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="search_btn  shadow-lg p-3 mb-5 bg-body rounded " type="button" id="button-addon2"  onclick="search_btn()">seacrh</button>
+        </div>
+  
+        <!-- Books search result -->
+        <div id="search_result" class="row row-cols-1 row-cols-md-3 g-5 w-90 mx-auto mt-5">
+        </div>
+    </div>
+   
+
+
+    <!-- javascript part -->
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
